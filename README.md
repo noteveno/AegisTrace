@@ -16,6 +16,26 @@ It is a prompt kit, not a scanner. Its value is the disciplined investigation pr
 
 For a shorter starting point, use [the compact prompt](prompts/compact.md). See [the sample report](examples/sample-report.md) for the intended standard of evidence and clarity.
 
+## Install as an agent skill
+
+The portable source is [skills/aegistrace](skills/aegistrace). Copy that directory into the relevant location, then invoke the skill by name or ask the agent to perform an AegisTrace audit.
+
+| Tool | Personal installation | Project installation |
+| --- | --- | --- |
+| Codex | `~/.codex/skills/aegistrace` | `.agents/skills/aegistrace` |
+| Claude Code | `~/.claude/skills/aegistrace` | `.claude/skills/aegistrace` |
+| OpenCode | `~/.config/opencode/skills/aegistrace` | `.opencode/skills/aegistrace` |
+| Other compatible agents | See the tool's Agent Skills location | `.agents/skills/aegistrace` |
+
+For example, after cloning this repository, install it for Claude Code with:
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R skills/aegistrace ~/.claude/skills/aegistrace
+```
+
+The same source folder works for all listed tools; only its destination changes. Claude Code and OpenCode both support the interoperable `SKILL.md` directory pattern. [Claude Code documentation](https://code.claude.com/docs/en/skills) and [OpenCode documentation](https://opencode.ai/v2/docs/skills) describe their respective locations.
+
 ## The workflow
 
 | Stage | Outcome |
