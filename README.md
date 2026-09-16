@@ -4,7 +4,7 @@
 
 **An evidence-driven prompt workflow for AI-assisted vulnerability discovery.**
 
-AegisTrace helps coding agents audit a repository methodically: map the system, run focused vulnerability hunts, challenge every suspected finding, trace actual reachability, and report only what survives scrutiny.
+AegisTrace helps coding agents audit a repository methodically: map the system, run focused vulnerability hunts, challenge every suspected finding, trace actual reachability, and report only what survives scrutiny. It creates a durable `aegistrace-audit/` folder of Markdown notes so the audit stays reviewable from Recon through the final report.
 
 It is a prompt kit, not a scanner. Its value is the disciplined investigation process it gives to an AI agent.
 
@@ -65,6 +65,7 @@ Already have an `aegistrace` folder at that destination? Back it up or remove it
 assets/             Visual assets for the project
 examples/           Reference outputs
 prompts/            Full and compact AegisTrace prompts
+skills/             Portable Agent Skills package
 ```
 
 ## Safety and scope
