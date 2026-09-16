@@ -24,6 +24,28 @@ Paste this into your AI coding agent:
 Install AegisTrace from https://github.com/noteveno/AegisTrace: detect my compatible AI coding CLIs, ask whether to install it for one or all, safely install `skills/aegistrace`, verify it, and tell me how to use it—never use sudo or overwrite an existing installation without asking.
 ```
 
+### Install manually
+
+Clone the repository, then copy the `skills/aegistrace` folder to the personal skill directory for your coding agent. Choose one path—or install it in every tool you use.
+
+| Tool | Personal skill directory |
+| --- | --- |
+| Codex | `~/.codex/skills/aegistrace` |
+| Claude Code | `~/.claude/skills/aegistrace` |
+| OpenCode | `~/.config/opencode/skills/aegistrace` |
+
+For example, this installs AegisTrace for Claude Code:
+
+```bash
+git clone https://github.com/noteveno/AegisTrace.git
+mkdir -p ~/.claude/skills
+cp -R AegisTrace/skills/aegistrace ~/.claude/skills/aegistrace
+```
+
+For Codex or OpenCode, replace the final destination with the matching path in the table. Restart the agent if it does not notice the new skill automatically, then ask it to run an **AegisTrace audit** (or invoke `aegistrace` directly when your agent supports named skills).
+
+Already have an `aegistrace` folder at that destination? Back it up or remove it only after checking what version it contains; do not overwrite it blindly.
+
 ## The workflow
 
 | Stage | Outcome |
