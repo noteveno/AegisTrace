@@ -36,6 +36,8 @@ cp -R skills/aegistrace ~/.claude/skills/aegistrace
 
 The same source folder works for all listed tools; only its destination changes. Claude Code and OpenCode both support the interoperable `SKILL.md` directory pattern. [Claude Code documentation](https://code.claude.com/docs/en/skills) and [OpenCode documentation](https://opencode.ai/v2/docs/skills) describe their respective locations.
 
+Want an agent to install it for you? Copy [this ready-made installer prompt](INSTALL-WITH-AN-AGENT.md) into your coding agent.
+
 ## The workflow
 
 | Stage | Outcome |
