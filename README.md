@@ -18,25 +18,11 @@ For a shorter starting point, use [the compact prompt](prompts/compact.md). See 
 
 ## Install as an agent skill
 
-The portable source is [skills/aegistrace](skills/aegistrace). Copy that directory into the relevant location, then invoke the skill by name or ask the agent to perform an AegisTrace audit.
+Paste this into your AI coding agent:
 
-| Tool | Personal installation | Project installation |
-| --- | --- | --- |
-| Codex | `~/.codex/skills/aegistrace` | `.agents/skills/aegistrace` |
-| Claude Code | `~/.claude/skills/aegistrace` | `.claude/skills/aegistrace` |
-| OpenCode | `~/.config/opencode/skills/aegistrace` | `.opencode/skills/aegistrace` |
-| Other compatible agents | See the tool's Agent Skills location | `.agents/skills/aegistrace` |
-
-For example, after cloning this repository, install it for Claude Code with:
-
-```bash
-mkdir -p ~/.claude/skills
-cp -R skills/aegistrace ~/.claude/skills/aegistrace
+```text
+Install AegisTrace from https://github.com/noteveno/AegisTrace: detect my compatible AI coding CLIs, ask whether to install it for one or all, safely install `skills/aegistrace`, verify it, and tell me how to use it—never use sudo or overwrite an existing installation without asking.
 ```
-
-The same source folder works for all listed tools; only its destination changes. Claude Code and OpenCode both support the interoperable `SKILL.md` directory pattern. [Claude Code documentation](https://code.claude.com/docs/en/skills) and [OpenCode documentation](https://opencode.ai/v2/docs/skills) describe their respective locations.
-
-Want an agent to install it for you? Copy [this ready-made installer prompt](INSTALL-WITH-AN-AGENT.md) into your coding agent.
 
 ## The workflow
 
